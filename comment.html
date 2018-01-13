@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+<style>
+.btn-comment {
+    border: none;
+    background: #fff;
+    color: #b5b5b5;
+    padding: 10px 12px;
+}
+
+.btn-comment:hover {
+    background: #eee;
+    border-radius: 50%;
+}
+
+#up-comment {
+    position: absolute;
+    left: 13px;
+    top: -15px;
+}
+
+.dropdown-comment {
+    margin-top: 20px;
+    width: 375px;
+    height: 500px;
+    border: 1px solid #d4d4d4;
+    border-radius: 5px;
+    position: absolute !important;
+    z-index: 1;
+    background: #fff;
+    padding-top: 10px;
+    /* overflow: scroll; */
+}
+
+.comment-bar ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.noti,
+.ib {
+    display: inline-block;
+}
+
+.noti {
+    margin-left: 20px;
+}
+
+.dropdown-comment ul li {
+    width: 45%;
+}
+
+.dropdown-comment ul li button {
+    width: 100%;
+}
+
+.date {
+    font-weight: bold;
+    font-size: 22px;
+    padding-left: 18px;
+}
+
+.content-cmt {
+    overflow: auto;
+    height: 91%;
+}
+
+.cmt {
+    padding: 0px 18px;
+    padding-top: 20px;
+}
+
+.cmt:hover {
+    background: #d4d4d4;
+}
+
+.cmt-left {
+    float: left;
+    margin-right: 10px;
+}
+
+.cmt-right {
+    /* float:left; */
+    font-size: 16px;
+    /* margin-left: 10px; */
+}
+
+.cmt-right span {
+    margin-right: 24px;
+}
+
+.img-cmt {
+    width: 70%;
+    margin: auto;
+}
+
+.sub-img {
+    width: 30%;
+    height: 120px;
+    border-radius: 5px;
+}
+
+.comment {
+    height: 491px;
+}
+.inbox-cmt{
+    text-align: center;
+}
+.new-mess{
+    width: 100%;
+    color:rgb(54, 54, 54);
+    height: 35px;
+    line-height: 35px;
+}
+.new-mess:hover{
+    background: rgb(235, 235, 235);
+    border-radius: 5px;
+}
+.new-mess a{
+    margin-left: 5px;
+    color:rgb(54, 54, 54);
+}
+.new-mess a:hover{
+    text-decoration: none;
+}
+.mess-bottom{
+    width: 60%;
+    font-size: 13px;
+    color: #a2a2a2;
+}
+</style>
+
+<body>
+    <div class="comment-bar">
+        <button class="btn-comment" type="button" class="btn btn-default"><i class="fa fa-2x fa-commenting" aria-hidden="true"></i></button>
+        <div class="dropdown-comment">
+            <img id="up-comment" src="img/up.PNG" width="30" height="20" alt="" srcset="">
+            <ul class="nav nav-pills">
+                <li class="noti active">
+                    <a data-toggle="pill" href=".comment">Notifications</a>
+                </li>
+                <li class="ib">
+                    <a data-toggle="pill" href=".inbox-cmt">Inbox</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="comment tab-pane fade in active">
+                    <div class="content-cmt">
+                        <div>
+                            <h3 class="date">Yesterday</h3>
+                        </div>
+                        <div class="cmt">
+                            <img class="cmt-left" src="img/icon.png" width="40" height="40" alt="" srcset="">
+                            <div class="cmt-right">
+                                <span>You've got 18 new ideas waiting for you!</span>
+                                <p style="font-size:12px;margin-left:50px;color:#c0c0c0;">19 hours ago</p>
+                                <div class="img-cmt">
+                                    <img class="sub-img" src="https://i.pinimg.com/236x/c8/a5/75/c8a57578b1c5b7e0eb020262b57a781c.jpg" alt="" srcset="">
+                                    <img class="sub-img" src="https://i.pinimg.com/564x/d5/8c/85/d58c85b8bc43d64c376990723e90b8a1.jpg" alt="" srcset="">
+                                    <img class="sub-img" src="https://i.pinimg.com/236x/13/44/cc/1344ccb1961539259e2ec12bef1fda5b.jpg" alt="" srcset="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="cmt">
+                            <img class="cmt-left" src="img/icon.png" width="40" height="40" alt="" srcset="">
+                            <div class="cmt-right">
+                                <span>You've got 18 new ideas waiting for you!</span>
+                                <p style="font-size:12px;margin-left:50px;color:#c0c0c0;">19 hours ago</p>
+                                <div class="img-cmt">
+                                    <img class="sub-img" src="https://i.pinimg.com/236x/1a/e5/b3/1ae5b3c12d9bc589d6fe34bbb9a1f33a.jpg" alt="" srcset="">
+                                    <img class="sub-img" src="https://i.pinimg.com/236x/7a/4b/a5/7a4ba5bead3bb80f2b0d30b4b345bee4.jpg" alt="" srcset="">
+                                    <img class="sub-img" src="https://i.pinimg.com/236x/c9/c5/21/c9c5213009e656a7bc62acac6ba5d06a.jpg" alt="" srcset="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="cmt">
+                            <img class="cmt-left" src="img/icon.png" width="40" height="40" alt="" srcset="">
+                            <div class="cmt-right">
+                                <span>You've got 18 new ideas waiting for you!</span>
+                                <p style="font-size:12px;margin-left:50px;color:#c0c0c0;">19 hours ago</p>
+                                <div class="img-cmt">
+                                    <img class="sub-img" src="https://i.pinimg.com/236x/ef/56/9d/ef569d16a4ad890a85408c8b08fbe0bb.jpg" alt="" srcset="">
+                                    <img class="sub-img" src="https://i.pinimg.com/236x/c0/33/66/c033660c7210ff897b24bd360f02347b.jpg" alt="" srcset="">
+                                    <img class="sub-img" src="https://i.pinimg.com/236x/13/44/cc/1344ccb1961539259e2ec12bef1fda5b.jpg" alt="" srcset="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="inbox-cmt tab-pane fade">
+                    <div class="new-mess">
+                            <i class="fa fa-plus" aria-hidden="true"></i><a href="">New message</a>
+                    </div>
+                    <img style="margin-top:15px;" src="img/icon-mess.png" alt="" srcset="">
+                    <div style="margin:auto;" class="mess-bottom">
+                            <p>Send messages to your friends!<br/>Plan projects, swap ideas and share your best discoveries.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+</script>
+
+</html>

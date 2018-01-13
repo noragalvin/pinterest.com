@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <script src="https://npmcdn.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"></script>
+    <title>Document</title>
+    <style>
+        .item{
+            border: 1px solid #000;
+            max-width: 300px;
+            text-align: center;
+            margin: auto;
+            /* background: #000; */
+        }
+        #button-item{
+            position: relative;
+            top: 50px;
+            left: 50px;
+            display: none;
+        }
+        #url{
+            position: relative;
+            bottom: 50px;
+            right: 50px;
+            display: none;
+        }
+        #icon-bottom{
+            display: block;
+            margin-left: 200px;
+        }
+
+        .item:hover .dark{
+            opacity: 0.5;
+        }
+        .dark{
+            width: 100px;
+            height: 100px;
+            background: rgb(192, 192, 192);
+            z-index: 1;
+            top: 50px;
+            position: relative;
+            
+        }
+    </style>
+</head>
+<body>
+    <br/>
+    <div class="item">
+        <div class="dark"></div>
+        <button id="button-item" type="button" class="btn btn-danger"<i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+        <img id="img" src="https://i.pinimg.com/564x/94/21/3f/94213fcff4492891f5e950871fa57372.jpg" alt="" srcset="">
+        <a id="url" href="minhnora.net">minhnora.net</a>
+        <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+    </div>
+</body>
+</html>

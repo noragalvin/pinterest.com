@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pinterest</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://npmcdn.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"></script>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <div class="bar">
+            <div class="icon-bar inline">
+                <a href="#"><img id="icon" src="./img/icon.png" alt=""></a>
+            </div>
+            <i id="fake" class="fa fa-lg fa-search" aria-hidden="true"></i>
+            <div class="search-bar inline">
+                <i class="fa fa-lg fa-search" aria-hidden="true"></i>
+                <input type="text" id="input-search" class="form-control" placeholder="Search">
+            </div>
+            <button id="home" type="button" class="btn btn-default">Home</button>
+            <button class="profile" type="button" class="btn btn-default"><img id="avatar" src="./img/avatar.jpg" alt="" srcset=""><span>Ngọc Minh</span></button>
+            <button class="btn-menu" type="button" class="btn btn-default"><i class="fa fa-2x fa-bars" aria-hidden="true"></i></button>
+            <div class="comment-bar">
+                <button class="btn-comment" type="button" class="btn btn-default"><i class="fa fa-2x fa-commenting" aria-hidden="true"></i></button>
+                <div class="dropdown-comment">
+                    <img id="up-comment" src="img/up.PNG" width="30" height="20" alt="" srcset="">
+                    <ul class="nav nav-pills">
+                        <li class="noti active">
+                            <a data-toggle="pill" href=".comment">Notifications</a>
+                        </li>
+                        <li class="ib">
+                            <a data-toggle="pill" href=".inbox-cmt">Inbox</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="comment tab-pane fade in active">
+                            <div class="content-cmt">
+                                <div>
+                                    <h3 class="date">Yesterday</h3>
+                                </div>
+                                <div class="cmt">
+                                    <img class="cmt-left" src="img/icon.png" width="40" height="40" alt="" srcset="">
+                                    <div class="cmt-right">
+                                        <span>You've got 18 new ideas waiting for you!</span>
+                                        <p style="font-size:12px;margin-left:50px;color:#c0c0c0;">19 hours ago</p>
+                                        <div class="img-cmt">
+                                            <img class="sub-img" src="https://i.pinimg.com/236x/c8/a5/75/c8a57578b1c5b7e0eb020262b57a781c.jpg" alt="" srcset="">
+                                            <img class="sub-img" src="https://i.pinimg.com/564x/d5/8c/85/d58c85b8bc43d64c376990723e90b8a1.jpg" alt="" srcset="">
+                                            <img class="sub-img" src="https://i.pinimg.com/236x/13/44/cc/1344ccb1961539259e2ec12bef1fda5b.jpg" alt="" srcset="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="cmt">
+                                    <img class="cmt-left" src="img/icon.png" width="40" height="40" alt="" srcset="">
+                                    <div class="cmt-right">
+                                        <span>You've got 18 new ideas waiting for you!</span>
+                                        <p style="font-size:12px;margin-left:50px;color:#c0c0c0;">19 hours ago</p>
+                                        <div class="img-cmt">
+                                            <img class="sub-img" src="https://i.pinimg.com/236x/1a/e5/b3/1ae5b3c12d9bc589d6fe34bbb9a1f33a.jpg" alt="" srcset="">
+                                            <img class="sub-img" src="https://i.pinimg.com/236x/7a/4b/a5/7a4ba5bead3bb80f2b0d30b4b345bee4.jpg" alt="" srcset="">
+                                            <img class="sub-img" src="https://i.pinimg.com/236x/c9/c5/21/c9c5213009e656a7bc62acac6ba5d06a.jpg" alt="" srcset="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="cmt">
+                                    <img class="cmt-left" src="img/icon.png" width="40" height="40" alt="" srcset="">
+                                    <div class="cmt-right">
+                                        <span>You've got 18 new ideas waiting for you!</span>
+                                        <p style="font-size:12px;margin-left:50px;color:#c0c0c0;">19 hours ago</p>
+                                        <div class="img-cmt">
+                                            <img class="sub-img" src="https://i.pinimg.com/236x/ef/56/9d/ef569d16a4ad890a85408c8b08fbe0bb.jpg" alt="" srcset="">
+                                            <img class="sub-img" src="https://i.pinimg.com/236x/c0/33/66/c033660c7210ff897b24bd360f02347b.jpg" alt="" srcset="">
+                                            <img class="sub-img" src="https://i.pinimg.com/236x/13/44/cc/1344ccb1961539259e2ec12bef1fda5b.jpg" alt="" srcset="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="inbox-cmt tab-pane fade">
+                            <div class="new-mess">
+                                <i class="fa fa-plus" aria-hidden="true"></i><a href="">New message</a>
+                            </div>
+                            <img style="margin-top:15px;" src="img/icon-mess.png" alt="" srcset="">
+                            <div style="margin:auto;" class="mess-bottom">
+                                <p>Send messages to your friends!
+                                    <br/>Plan projects, swap ideas and share your best discoveries.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="help-menu">
+                <button class="btn-help" type="button" class="btn btn-default"><span class="glyphicon glyphicon-option-horizontal"></span></button>
+                <div class="dropdown-icon">
+                    <img id="icon-up" width="30" height="20" src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href="">Settings</a></li>
+                        <li style="border-top:1px solid rgb(194, 194, 194);"><a href="">Help center</a></li>
+                        <li><a href="">Switch to business</a></li>
+                        <li><a href="">Terms & privacy</a></li>
+                        <li style="border-top:1px solid rgb(221, 220, 220);"><a href="">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <img id="up" src="img/up.png" width="30" height="20" alt="" srcset="">
+            <br/>
+            <div class="left">
+                <ul>
+                    <li style="color:#000;font-weight:bold;">Home feed</li>
+                    <li style="color:#838383;font-weight:bold;"><a href="">Popular</a></li>
+                    <li style="color:#838383;font-weight:bold;"><a href="">Everything</a></li>
+                    <li style="color:#838383;font-weight:bold;"><a href="">Gifts</a></li>
+                    <li style="color:#838383;font-weight:bold;"><a href="">Videos</a></li>
+                    <li style="color:#838383;font-weight:bold;"><a href="">Animals and pets</a></li>
+                    <li style="color:#838383;font-weight:bold;"><a href="">Architecture</a></li>
+                    <li style="color:#838383;font-weight:bold;"><a href="">Art</a></li>
+                    <li style="color:#838383;font-weight:bold;"><a href="">Cars and motorcycles</a></li>
+                    <li style="color:#838383;font-weight:bold;"><a href="">Celebrities</a></li>
+                    <li style="color:#838383;font-weight:bold;"><a href="">DIY and crafts</a></li>
+                    <li style="color:#838383;font-weight:bold;"><a href="">Design</a></li>
+                    <li style="color:#838383;font-weight:bold;"><a href="">Education</a></li>
+                    <li style="color:#838383;font-weight:bold;"><a href="">Entertainment</a></li>
+                    <li style="color:#838383;font-weight:bold;"><a href="">Food and drink</a></li>
+                    <li style="color:#838383;font-weight:bold;"><a href="">Gardening</a></li>
+                    <li style="color:#838383;font-weight:bold;"><a href="">Geek</a></li>
+                    <li style="color:#838383;font-weight:bold;"><a href="">Hair and beauty</a></li>
+                    <li style="color:#838383;font-weight:bold;"><a href="">Health and fitness</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li style=""><a href="">History</a></li>
+                    <li style="color:#838383;font-weight:bold;"><a href="">Holidays and events</a></li>
+                    <li style="color:#838383;font-weight:bold;"><a href="">Home decor</a></li>
+                    <li style="color:#838383;font-weight:bold;"><a href="">Humor</a></li>
+                    <li style="color:#838383;font-weight:bold;"><a href="">Illutrations and posters</a></li>
+                    <li style="color:#838383;font-weight:bold;"><a href="">Kids and parenting</a></li>
+                    <li style="color:#838383;font-weight:bold;"><a href="">Men's fashion</a></li>
+                    <li style="color:#838383;font-weight:bold;"><a href="">Outdoors</a></li>
+                    <li style="color:#838383;font-weight:bold;"><a href="">Photography</a></li>
+                    <li style="color:#838383;font-weight:bold;"><a href="">Products</a></li>
+                    <li style="color:#838383;font-weight:bold;"><a href="">Quotes</a></li>
+                    <li style="color:#838383;font-weight:bold;"><a href="">Science and nature</a></li>
+                    <li style="color:#838383;font-weight:bold;"><a href="">Sports</a></li>
+                    <li style="color:#838383;font-weight:bold;"><a href="">Tattoos</a></li>
+                    <li style="color:#838383;font-weight:bold;"><a href="">Technology</a></li>
+                    <li style="color:#838383;font-weight:bold;"><a href="">Travel</a></li>
+                    <li style="color:#838383;font-weight:bold;"><a href="">Weddings</a></li>
+                    <li style="color:#838383;font-weight:bold;"><a href="">Women's fashion</a></li>
+                </ul>
+            </div>
+            <hr style="margin-bottom: 10px;margin-top:0px">
+            <div class="bottom">
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Businesses</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Developers</a></li>
+                    <li><a href="">Removals</a></li>
+                    <li><a href="">Privacy</a></li>
+                    <li><a href="">Terms</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="container-grid">
+        <div class="btn-bottom">
+            <button style="border-radius: 50%;" type="button" class="btn btn-default">+</button>
+            <button style="border-radius: 50%;" type="button" class="btn btn-default">?</button>
+            <button id="privacy" style="border:none;font-size:12px;" type="button" class="btn btn-default">Privacy</button>
+        </div>
+        <div class="content">
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/c8/a5/75/c8a57578b1c5b7e0eb020262b57a781c.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/564x/d5/8c/85/d58c85b8bc43d64c376990723e90b8a1.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/13/44/cc/1344ccb1961539259e2ec12bef1fda5b.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/1a/e5/b3/1ae5b3c12d9bc589d6fe34bbb9a1f33a.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/7a/4b/a5/7a4ba5bead3bb80f2b0d30b4b345bee4.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/c9/c5/21/c9c5213009e656a7bc62acac6ba5d06a.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/ef/56/9d/ef569d16a4ad890a85408c8b08fbe0bb.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/c0/33/66/c033660c7210ff897b24bd360f02347b.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/13/44/cc/1344ccb1961539259e2ec12bef1fda5b.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/1a/e5/b3/1ae5b3c12d9bc589d6fe34bbb9a1f33a.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/a7/7d/eb/a77deb894f30e78650a62f0d50bef417.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/07/29/28/0729289234e268297b65b1bb977e7be6.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/13/44/cc/1344ccb1961539259e2ec12bef1fda5b.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/1a/e5/b3/1ae5b3c12d9bc589d6fe34bbb9a1f33a.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/7a/4b/a5/7a4ba5bead3bb80f2b0d30b4b345bee4.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/38/e2/6e/38e26e4c7c2b4714b297fc24055fdce6.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/ef/56/9d/ef569d16a4ad890a85408c8b08fbe0bb.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/38/e2/6e/38e26e4c7c2b4714b297fc24055fdce6.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/13/44/cc/1344ccb1961539259e2ec12bef1fda5b.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/1a/e5/b3/1ae5b3c12d9bc589d6fe34bbb9a1f33a.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/38/e2/6e/38e26e4c7c2b4714b297fc24055fdce6.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/07/29/28/0729289234e268297b65b1bb977e7be6.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/13/44/cc/1344ccb1961539259e2ec12bef1fda5b.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/1a/e5/b3/1ae5b3c12d9bc589d6fe34bbb9a1f33a.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/7a/4b/a5/7a4ba5bead3bb80f2b0d30b4b345bee4.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/38/e2/6e/38e26e4c7c2b4714b297fc24055fdce6.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/ef/56/9d/ef569d16a4ad890a85408c8b08fbe0bb.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/38/e2/6e/38e26e4c7c2b4714b297fc24055fdce6.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/13/44/cc/1344ccb1961539259e2ec12bef1fda5b.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/1a/e5/b3/1ae5b3c12d9bc589d6fe34bbb9a1f33a.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/38/e2/6e/38e26e4c7c2b4714b297fc24055fdce6.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/07/29/28/0729289234e268297b65b1bb977e7be6.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/13/44/cc/1344ccb1961539259e2ec12bef1fda5b.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/1a/e5/b3/1ae5b3c12d9bc589d6fe34bbb9a1f33a.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/7a/4b/a5/7a4ba5bead3bb80f2b0d30b4b345bee4.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/38/e2/6e/38e26e4c7c2b4714b297fc24055fdce6.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/ef/56/9d/ef569d16a4ad890a85408c8b08fbe0bb.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/38/e2/6e/38e26e4c7c2b4714b297fc24055fdce6.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/13/44/cc/1344ccb1961539259e2ec12bef1fda5b.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/1a/e5/b3/1ae5b3c12d9bc589d6fe34bbb9a1f33a.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/ef/56/9d/ef569d16a4ad890a85408c8b08fbe0bb.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/38/e2/6e/38e26e4c7c2b4714b297fc24055fdce6.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/13/44/cc/1344ccb1961539259e2ec12bef1fda5b.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/1a/e5/b3/1ae5b3c12d9bc589d6fe34bbb9a1f33a.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/ef/56/9d/ef569d16a4ad890a85408c8b08fbe0bb.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/38/e2/6e/38e26e4c7c2b4714b297fc24055fdce6.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/13/44/cc/1344ccb1961539259e2ec12bef1fda5b.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/1a/e5/b3/1ae5b3c12d9bc589d6fe34bbb9a1f33a.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/1a/e5/b3/1ae5b3c12d9bc589d6fe34bbb9a1f33a.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/ef/56/9d/ef569d16a4ad890a85408c8b08fbe0bb.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/38/e2/6e/38e26e4c7c2b4714b297fc24055fdce6.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/13/44/cc/1344ccb1961539259e2ec12bef1fda5b.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/1a/e5/b3/1ae5b3c12d9bc589d6fe34bbb9a1f33a.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+            <div class="item">
+                <button id="button-item" type="button" class="btn btn-danger"> <i class="fa fa-thumb-tack danger" aria-hidden="true"></i> Save</button>
+                <img id="img" src="https://i.pinimg.com/236x/1a/e5/b3/1ae5b3c12d9bc589d6fe34bbb9a1f33a.jpg" alt="" srcset="">
+                <a id="url" href="minhnora.net">minhnora.net</a>
+                <a id="icon-bottom" href="" class="glyphicon glyphicon-option-horizontal"></a>
+                <div class="dropdown-pic">
+                    <img src="img/up.PNG" alt="" srcset="">
+                    <ul>
+                        <li><a href=""><i class="fa fa-times" aria-hidden="true"></i>Hide</a></li>
+                        <li><a href=""><i class="fa fa-ban" aria-hidden="true"></i>Report</a></li>
+                    </ul>
+                    <p style="margin-left:20px">This Pin is inspired by your recent activity</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+$(document).ready(function() {
+    $(function() {
+
+        $('.content').masonry({
+
+            itemSelector: '.item',
+
+            columnWidth: 10
+
+        });
+
+    });
+
+    // $('#img').hover(function() { $(this).parent().toggleClass('hover'); });
+    // $('.bar').unbind('#icon');
+    function setLeft() {
+        var getLeft = $('.item');
+
+        var left = 0;
+
+        // setTimeout(() => {
+
+        //     $('.content').css('margin-left', 0 + 'px !important');
+        //     console.log("setmargin 0 done!");
+        // }, 5000);
+
+        setTimeout(() => {
+            getLeft.each(function() {
+                if (parseInt($(this).css('left')) > parseInt($(this).next().css('left'))) {
+                    // console.log("First" + parseInt($(this).css('left')));
+                    // console.log("Second" + parseInt($(this).next().css('left')) + "\n");
+                    left = parseInt($(this).css('left'));
+                    return false;
+                }
+
+            });
+
+            var requireMargin = $(window).width() - $('.item').width() - left;
+            // $('.content').css('margin-left', null);
+            // console.log("setmargin 0 done!");
+            $('.content').css('margin-left', requireMargin / 2 - 10 + 'px');
+            // console.log("setmargin done!");
+        }, 1000);
+    }
+    setLeft();
+
+
+    //set width input-search
+    function setWidth() {
+        var width = $('#input-search').css('width');
+        console.log(width);
+        width - +200;
+        $('#input-search').css('width', width + 'px !important');
+    }
+
+    $(window).resize(function() {
+        setLeft();
+        setWidth();
+    });
+
+
+    $('#input-search').click(function(e) {
+        e.preventDefault();
+        $('.container-grid').addClass('dark');
+        $('.item').unbind();
+    });
+
+
+});
+
+$(function() {
+    $('#fake').click(function() {
+        // $('.search-bar').css('display', 'inline-block');
+        $('.search-bar').addClass('active');
+        $('.search-bar').slideToggle('fast');
+        $('.search-bar').css('width', 75 + "% !important");
+    });
+});
+
+// $('.container-grid').on('focusout', function () {
+//   $(this).removeClass('dark');
+// });
+
+$('.container-grid').click(function(e) {
+    e.preventDefault();
+    var str = $('.container-grid').attr('class');
+    // console.log(str);  
+    var y = str.substr(15, 4);
+    // console.log(y);
+    if (y === 'dark') {
+        // $('.search-bar').removeClass('active');
+        $('.container-grid').removeClass('dark');
+    }
+});
+
+$('.btn-menu').click(function(e) {
+    e.preventDefault();
+    $('.dropdown').slideToggle('fast');
+    $('.dropdown-comment').slideUp('fast');
+    $('.dropdown-icon').slideUp('fast');
+});
+
+$('.btn-comment').click(function(e) {
+    e.preventDefault();
+    $('.dropdown').slideUp('fast');
+    $('.dropdown-comment').slideToggle('fast');
+    $('.dropdown-icon').slideUp('fast');
+});
+
+$('.btn-help').click(function(e) {
+    e.preventDefault();
+    $('.dropdown').slideUp('fast');
+    $('.dropdown-comment').slideUp('fast');
+    $('.dropdown-icon').slideToggle('fast');
+});
+
+// $('#icon-bottom').click(function (e) { 
+//     e.preventDefault();
+//     $('.dropdown-pic').slideDown('fast');
+// });
+</script>
